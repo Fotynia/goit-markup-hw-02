@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: var(--brend-color);
     color: #212121;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -41,9 +41,7 @@ ul {
     background-color: var(--brend-color);
 }
 .site-nav-list .link {
-    font-family: Roboto;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--brend-text-color);
@@ -52,15 +50,17 @@ ul {
 
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
-        font-family: Roboto;
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--accent-color);
+        text-decoration: none;
 }
 
 .site-nav-list .link-current {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
 }
@@ -76,7 +76,9 @@ ul {
         color: #757575;
         text-decoration: none;
 }
-.header .contacts a:hover {
+
+.header .contacts a:hover, 
+.header .contacts a:focus {
     color: var(--accent-color);
 }
 /* Hero */
@@ -95,10 +97,6 @@ ul {
 }
        /* Наші переваги */
 
-       .our-advantages {
-       background-color: #F5F5F5;
-       }
- 
         .our-advantages .title {
                 font-weight: 700;
                 font-size: 14px;
@@ -119,7 +117,7 @@ ul {
  /* Чим ми займаємось */
 
          .what-we-do {
-           background-color: #F5F5F5;
+           background-color: var(--brend-color);
 
          }
          .what-we-do .title {
@@ -215,8 +213,12 @@ background-color: #2F303A;
 .adress a {
     font-style: normal;
     line-height: 1.71;
-    color: var(--brend-color);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+.adress .post {
+color: var(--brend-color);
 }
 
 .adress a:hover,
@@ -224,13 +226,11 @@ background-color: #2F303A;
         font-style: normal;
         line-height: 1.71;
         letter-spacing: 0.02em;
-        color: var(--accent-color);
+        color:var(--accent-color);
 }
 
 /* ПОРТФОЛІО */
-.portfolio {
-    background-color: #F5F5F5;
-}
+
 .portfolio .title {
         font-weight: 700;
         font-size: 18px;
